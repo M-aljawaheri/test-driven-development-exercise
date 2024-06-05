@@ -56,4 +56,11 @@ def add(s: str) -> str:
         '6'
         >>>
     """
-    return "7"  # TODO: Implement the function logic.
+    if s == '':
+        return '0'
+
+
+    # string_list = s.split(',')
+
+    
+    # int_list = map(int, string_list)
