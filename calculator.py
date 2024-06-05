@@ -56,6 +56,9 @@ def add(s: str) -> str:
         '6'
         >>>
     """
+    if (len(s) > 0 and s[-1] == ","):
+        return "Number expected but EOF found."
+    
     if s == '':
         return '0'
     
