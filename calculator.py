@@ -58,9 +58,12 @@ def add(s: str) -> str:
     """
     if s == '':
         return '0'
-
-
-    # string_list = s.split(',')
-
     
-    # int_list = map(int, string_list)
+    int_list = s.split(',')
+
+    if len(int_list) == 1:
+        return int_list[0] 
+    
+    if len(int_list) == 2:
+        return str(int(int_list[0]) + int(int_list[1]))
+
