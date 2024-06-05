@@ -56,5 +56,11 @@ def add(s: str) -> str:
         '6'
         >>>
     """
-    list = str.splitlines(s, ",")
-    return "7"  # TODO: Implement the function logic.
+    list = s.split(",")
+    new_list = []
+    for x in list:
+        if x == '':
+            new_list += [0]
+        else:
+            new_list += [int(x)]
+    return str(sum(new_list))  # TODO: Implement the function logic.
