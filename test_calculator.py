@@ -49,3 +49,9 @@ def test_basic_add_two_numbers():
     assert add("123,123") == "246", "Failed on 123+123==246"
     assert add("321,321") == "642", "Failed on 321+321==642"
     assert add("12,0") == "12", "Failed on 12+0==12"
+
+def test_missing_number():
+    """
+        Tests if there is a missing number in last position
+    """
+    assert add("5,2,") == "Number expected but EOF found.", "Failed on \'5,2,\'"
