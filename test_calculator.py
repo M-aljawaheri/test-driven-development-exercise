@@ -34,3 +34,18 @@ def test_basic_add_one_number():
     assert add("123") == "123", "Failed on 123==123"
     assert add("321") == "321", "Failed on 321==321"
     assert add("12") == "12", "Failed on 12==12"
+
+def test_basic_add_two_numbers():
+    """
+        Tests addition. This test is written for you, extend it and add others!
+    """
+    assert add("5,2") == "7", "Failed on 5+2==7"
+    assert add("3,2") == "5", "Failed on 3+2==5"
+    assert add("8,1") == "9", "Failed on 8+1==9"
+    assert add("1,1") == "2", "Failed on 1+1==2"
+    assert add("40,50") == "90", "Failed on 40+50==90"
+    assert add("12,28") == "40", "Failed on 12+28==40"
+    assert add("0,0") == "0", "Failed on 0+0==0"
+    assert add("123,123") == "246", "Failed on 123+123==246"
+    assert add("321,321") == "642", "Failed on 321+321==642"
+    assert add("12,0") == "12", "Failed on 12+0==12"
