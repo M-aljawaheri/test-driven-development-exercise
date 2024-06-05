@@ -56,4 +56,5 @@ def add(s: str) -> str:
         '6'
         >>>
     """
+    list = str.splitlines(s, ",")
     return "7"  # TODO: Implement the function logic.
