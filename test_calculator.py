@@ -19,3 +19,9 @@ def test_basic_add():
         Tests addition. This test is written for you, extend it and add others! 
     """
     assert add("5,2") == "7", "Failed on 5+2==7"
+    assert add("") == "0"
+    assert add("1,3") == "4"
+    assert add("30,45") == "75"
+    assert add("20,30,45") == "95"
+    
+

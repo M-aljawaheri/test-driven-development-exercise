@@ -56,4 +56,6 @@ def add(s: str) -> str:
         '6'
         >>>
     """
-    return "7"  # TODO: Implement the function logic.
+    if not s: return "0"
+    return str(sum(list(map(int, s.split(","))) + [0])) 
+    
